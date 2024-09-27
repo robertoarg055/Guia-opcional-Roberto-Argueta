@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="../css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<div class="envoltorio">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/logo2.png" title="logo" height="42px" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="../html/ofertas.html">Ofertas</a></li>
+					<li><a href="../html/consejos.html">Consejos</a></li>
+					<li class="activo"><a href="../html/aplicar.html">Aplicar</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<article class="ofertas">
+			<div class="envoltorio">
+				<!-- Para esta seccion se realizo uso de chat gpt, para poder ver como crear el formulario 
+				 para la opcion de fecha y departamento, para los otros elementos se siguio la estructura de la guía 4-->
+				<form action="../html/aplicar.html" method="post">
+					<input
+						type="text"
+						id="Nombre"
+						name="nombre" 
+						pattern="^[a-zA-Z\s]+$"
+						title="Solo se acepta letras"
+						class="control"
+						placeholder="Nombre"
+						required
+					/><br />
+					<input
+						type="text"
+						id="Apellidos"
+						name="apellidos"
+						pattern="^[a-zA-Z\s]+$"
+						title="Solo se acepta letras"
+						class="control"
+						placeholder="Apellidos"
+						required
+					/><br />
+					<input
+						type="text"
+						id="Carnet"
+						name="carnet" 
+						class="control"
+						placeholder="Número de carnet"
+						required
+					/><br />
+					<select id="Departamento" name="departamento" required>
+						<option value="">Seleccione un departamento</option>
+						<option value="Ahuachapan">Ahuachapan</option>
+						<option value="Cabañas">Cabañas</option>
+						<option value="Chalatenango">Chalatenango</option>
+						<option value="La Libertad">La Libertad</option>
+						<option value="La Paz">La Paz</option>
+						<option value="Santa Ana">Santa Ana</option>
+						<option value="San Miguel">San Miguel</option>
+						<option value="San Salvador">San Salvador</option>
+						<option value="San Vicente">San Vicente</option>
+						<option value="Sonsonate">Sonsonate</option>
+						<option value="Usulután">Usulután</option>
+						<option value="Morazán">Morazán</option>
+						<option value="La Unión">La Unión</option>
+						<option value="Cuscatlán">Cuscatlán</option>
+					</select><br />
+					<input
+						type="number"
+						id="Edad"
+						name="edad"
+						min="1"
+						class="control"
+						placeholder="Edad"
+						required
+					/><br />
+					<label for="Genero">Género:</label><br />
+					<input type="radio" id="Masculino" name="genero" value="masculino" required>
+					<label for="Masculino">Masculino</label><br />
+					<input type="radio" id="Femenino" name="genero" value="femenino">
+					<label for="Femenino">Femenino</label><br />
+					<input
+						type="date"
+						id="FechaNacimiento"
+						name="fecha_nacimiento"
+						class="control"
+						required
+					/><br />
+					<input
+					type="tel"
+					id="telefono"
+					value=""
+					pattern="^[0-9]{4}-?[0-9]{4}$"
+					title="Solo se acepta números en el siguiente formato 2222-2222"
+					class="control"
+					placeholder="Número de teléfono"
+					required
+				  /><br />
+					<select id="Carrera" name="carrera" required>
+						<option value="">Seleccione una carrera</option>
+						<option value="IngenieriaSoftware">Ingeniería de Software y Negocios Digitales</option>
+						<option value="IngenieriaNegocios">Ingeniería de Negocios</option>
+						<option value="LicEconomia">Licenciatura en Economía y Negocios</option>
+						<option value="LicCienciasJuridicas">Licenciatura en Ciencias Jurídicas</option>
+					</select><br />
+					<input
+						type="number"
+						id="PretensionSalarial"
+						name="pretension_salarial"
+						class="control"
+						placeholder="Pretensión salarial"
+						required
+					/><br />
+					<button type="submit" class="control">Aplicar</button>
+				</form>
+		</article>
+	</section>
+	<footer>
+		<p>Creado por: Roberto Argueta 20235762</p>
+	</footer>
+</body>
+</html>
+
+
